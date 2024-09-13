@@ -1,0 +1,235 @@
+{
+  "basics": {
+    "name": "Daniel Rodríguez Espinosa",
+    "label": "Matemático; futuro Data Scientist y Full-Stack Web Developer",
+    "image": "https://avatars.githubusercontent.com/u/135058430?v=4",
+    "email": "drespns@gmail.com",
+    "phone": "+34 636-059-886",
+    "url": "https://google.com",
+    "summary": "+2 años de experiencia programando en Python. 6 meses aprendiendo Desarrollo Web. Actualmente acabo de dejar un trabajo como becario como Analista de Datos; con vistas a emplear mi tiempo completo al máster y aprender Desarrollo Web... Vivo en Tenerife, España. Mi tareas principales en la empresa eran las de: llevar el control de versiones (Git) de nuestros 'pequeños' proyectos (ML, extracción de datos, ...), scraping, ...",
+    "location": {
+      "address": "",
+      "postalCode": "38108",
+      "city": "Santa Cruz de Tenerife",
+      "countryCode": "ES",
+      "region": "España"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "drespns",
+        "url": "https://github.com/drespns"
+      },
+      {
+        "network": "Instagram",
+        "username": "_drespns",
+        "url": "https://instagram.com/"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "drespns",
+        "url": "https://linkedin.com/in/"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "drespns",
+      "position": "Data Scientist",
+      "url": "https://google.com",
+      "startDate": "2024-03-25",
+      "endDate": "2024-09-25",
+      "summary": "...",
+      "highlights": ["Incluí "]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Organization",
+      "position": "Volunteer",
+      "url": "https://organization.com/",
+      "startDate": "2012-01-01",
+      "endDate": "2013-01-01",
+      "summary": "Description…",
+      "highlights": ["Awarded 'Volunteer of the Month'"]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Universidad de La Laguna (ULL)",
+      "url": "https://www.uoc.edu/portal/es/index.html",
+      "area": "Matemáticas",
+      "studyType": "Grado",
+      "startDate": "2016-09-01",
+      "endDate": "2022-09-10",
+      "score": "4.0",
+      "courses": [
+        "Galois",
+        "Introducción a la Programación",
+        "..."
+      ]
+    },
+    {
+      "institution": "Valencian International University (VIU)",
+      "url": "https://www.uoc.edu/portal/es/index.html",
+      "area": "Matemáticas",
+      "studyType": "Grado",
+      "startDate": "2016-09-01",
+      "endDate": "2022-09-10",
+      "score": "4.0",
+      "courses": [
+        "Galois",
+        "Introducción a la Programación",
+        "..."
+      ]
+    },
+    {
+      "institution": "Valencian International University (VIU)",
+      "url": "https://www.uoc.edu/portal/es/index.html",
+      "area": "Matemáticas",
+      "studyType": "Grado",
+      "startDate": "2016-09-01",
+      "endDate": "2022-09-10",
+      "score": "4.0",
+      "courses": [
+        "Galois",
+        "Introducción a la Programación",
+        "..."
+      ]
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Certificate",
+      "date": "2021-11-07",
+      "issuer": "Company",
+      "url": "https://certificate.com"
+    }
+  ],
+  "publications": [
+    {
+      "name": "Publication",
+      "publisher": "Company",
+      "releaseDate": "2014-10-01",
+      "url": "https://publication.com",
+      "summary": "Description…"
+    }
+  ],
+  "skills": [
+    {
+      "name": "HTML",
+      "level": "Intermedio-Avanzado",
+      "keywords": ["Desarrollo Web", "Frontend"],
+      "bgColor": "orange"
+    },
+    {
+      "name": "CSS",
+      "level": "Intermedio-Avanzado",
+      "keywords": ["Desarrollo Web", "Frontend", "Diseño Responsive"],
+      "bgColor": "orange"
+    },
+    {
+      "name": "JavaScript",
+      "level": "Básico-Intermedio",
+      "keywords": ["Desarrollo Web", "Frontend", "Backend", "Fullstack"],
+      "bgColor": "orange"
+    },
+    {
+      "name": "TailwindCSS",
+      "level": "Intermedio-Avanzado",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "CSS Framework",
+        "Diseño Responsive"
+      ],
+      "bgColor": "orange"
+    },
+    {
+      "name": "TypeScript",
+      "level": "Básico",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "Backend",
+        "JavaScript Superset"
+      ],
+      "bgColor": "orange"
+    },
+    {
+      "name": "React",
+      "level": "Básico",
+      "keywords": ["Desarrollo Web", "Frontend", "JavaScript Library", "UI"],
+      "bgColor": "orange"
+    },
+    {
+      "name": "ThreeJS",
+      "level": "Aprendiendo",
+      "keywords": ["Desarrollo Web", "Frontend", "JavaScript Library", "UI"],
+      "bgColor": "orange"
+    },
+    {
+      "name": "NodeJS",
+      "level": "Básico",
+      "keywords": ["Desarrollo Web", "Backend", "JavaScript", "Servidor"],
+      "bgColor": "orange"
+    },
+    {
+      "name": "Express",
+      "level": "Básico",
+      "keywords": ["Desarrollo Web", "Backend", "JavaScript", "Servidor"],
+      "bgColor": "orange"
+    },
+    {
+      "name": "MySQL",
+      "level": "Intermedio-Avanzado",
+      "keywords": [
+        "Bases de Datos",
+        "SQL",
+        "Almacenamiento de Datos",
+        "Backend"
+      ],
+      "bgColor": "orange"
+    },
+    {
+      "name": "Git",
+      "level": "Intermedio",
+      "keywords": ["Control de Versiones", "Colaboración", "Código Fuente"],
+      "bgColor": "orange"
+    }
+  ],
+  "languages": [
+    {
+      "language": "Castellano",
+      "fluency": "Nativo"
+    },
+    {
+      "language": "English",
+      "fluency": "Advanced"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Wildlife",
+      "keywords": ["Ferrets", "Unicorns"]
+    },
+    {
+      "name": "Wildlife",
+      "keywords": ["Ferrets", "Unicorns"]
+    },
+    {
+      "name": "Wildlife",
+      "keywords": ["Ferrets", "Unicorns"]
+    },
+    {
+      "name": "Wildlife",
+      "keywords": ["Ferrets", "Unicorns"]
+    }
+  ],
+  "references": [
+    {
+      "name": "Jane Doe",
+      "reference": "Reference…"
+    }
+  ]
+}
