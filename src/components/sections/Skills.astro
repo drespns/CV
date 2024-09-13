@@ -1,0 +1,48 @@
+---
+import Section from '../Section.astro'
+
+// ICONS
+import HTML from '../../assets/svg/HTML.astro'
+import CSS from '../../assets/svg/CSS.astro'
+import JavaScript from '../../assets/svg/JavaScript.astro'
+import TailwindCSS from '../../assets/svg/TailwindCSS.astro'
+import TypeScript from '../../assets/svg/TypeScript.astro'
+import React from '../../assets/svg/React.astro'
+import ThreeJS from '../../assets/svg/ThreeJS.astro'
+import NodeJS from '../../assets/svg/NodeJS.astro'
+import Express from '../../assets/svg/Express.astro'
+import MySQL from '../../assets/svg/MySQL.astro'
+import Git from '../../assets/svg/Git.astro'
+
+import { skills } from '../../../cv.json'
+// const { name, level, keywords } = skills
+const SKILLS_ICONS: Record<string, any> = {
+    HTML,
+    CSS,
+    JavaScript,
+    TailwindCSS,
+    TypeScript,
+    React,
+    ThreeJS,
+    NodeJS,
+    Express,
+    MySQL,
+    Git
+}
+---
+
+<Section title='Habilidades'>
+    <div class="flex flex-row gap-1 items-center">
+        {
+            skills.map(({ name, level, keywords, bgColor }) => {
+                const Icon = SKILLS_ICONS[name]
+
+                return (
+                    <button class="border-2 border-solid border-slate-500 p-2 rounded-full shadow-md hover:shadow-2xl hover:scale-105 hover:saturate-150 drop-shadow-2xl bg-orange-200/50">
+                        <Icon />
+                    </button>
+                )
+            })
+        }
+    </div>
+</Section>
