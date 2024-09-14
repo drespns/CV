@@ -1,8 +1,43 @@
 ---
 import Section from '../Section.astro'
 
+import { work } from '../../../cv.json'
+
+// const { name, position, url, startDate, endDate, summary, highlights } = work
 ---
 
 <Section title='Experiencia'>
-    
+    <ul class="flex flex-col gap-8">
+        {
+            work.map(({ name, position, company, url, startDate, endDate, summary, highlights }) => {
+                const startYear = new Date(startDate).getFullYear()
+                const endYear = endDate !== null ? new Date(endDate).getFullYear() : ''
+                const years = startYear !== endYear ? `${startYear} - ${endYear}` : `${startYear}`
+                
+                return (
+                    <li class="border-b-2 border-slate-500 rounded-b-3xl">
+                        <article class="p-4">
+                            <header class="flex flex-row justify-between items-start">
+                                <div class="">
+                                    <h3>{position}</h3>
+                                    <h4>{name}</h4>
+                                    <a
+                                        href={url}
+                                        title={`Trabajando en ${company} durante ${years}`}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >{company}</a>
+                                </div>
+
+                                <time datetime={`years`}>{years}</time>
+                            </header>
+                            <footer>
+                                <p>{summary}</p>
+                            </footer>
+                        </article>
+                    </li>
+                )
+            })
+        }
+    </ul>
 </Section>
