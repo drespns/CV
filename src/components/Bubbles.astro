@@ -1,20 +1,20 @@
 ---
-const { firstColors, secondColors } = Astro.props
-const [firstColor, secondColor, thirdColor] = firstColors
-const [secondFirstColor, secondSecondColor, secondThirdColor] = secondColors
+// const { firstColors, secondColors } = Astro.props
+// const [firstColor, secondColor, thirdColor] = firstColors
+// const [secondFirstColor, secondSecondColor, secondThirdColor] = secondColors
 ---
 
 <div class="relative">
     <!--  -->
     <div class="hidden xl:block absolute top-0 left-0 transform translate-x-6 translate-y-6">
-        <div class=`absolute w-20 h-20 lg:w-64 lg:h-64 rounded-full bg-gradient-to-br from-${firstColor}-100 to-${firstColor}-200 opacity-50`></div>
-        <div class=`absolute w-16 h-16 lg:w-56 lg:h-56 mt-8 ml-10 lg:mt-24 lg:ml-12 rounded-full bg-gradient-to-br from-${secondColor}-100 to-${secondColor}-200 opacity-50`></div>
-        <div class=`absolute w-20 h-20 lg:w-64 lg:h-64 ml-24 rounded-full bg-gradient-to-br from-${thirdColor}-100 to-${thirdColor}-200 opacity-50`></div>
+        <div class="absolute w-20 h-20 lg:w-64 lg:h-64 rounded-full bg-gradient-to-br from-blue-100 to-blue-200 opacity-50"></div>
+        <div class="absolute w-16 h-16 lg:w-56 lg:h-56 mt-8 ml-10 lg:mt-24 lg:ml-12 rounded-full bg-gradient-to-br from-red-100 to-red-200 opacity-50"></div>
+        <div class="absolute w-20 h-20 lg:w-64 lg:h-64 ml-24 rounded-full bg-gradient-to-br from-purple-100 to-purple-200 opacity-50"></div>
     </div>
     <!--  -->
     <div class="hidden xl:block absolute top-0 right-0 mt-20 mr-48 transform translate-y-80 -translate-x-32">
-        <div class={`absolute w-20 h-20 lg:w-64 lg:h-64 rounded-full bg-gradient-to-br from-${secondFirstColor}-100 to-${secondFirstColor}-200 opacity-75`}></div>
-        <div class={`absolute w-16 h-16 lg:w-56 lg:h-56 mt-8 ml-10 lg:mt-24 lg:ml-12 rounded-full bg-gradient-to-br from-${secondSecondColor}-800 to-${secondSecondColor}-500 opacity-75`}></div>
-        <div class={`absolute w-20 h-20 lg:w-64 lg:h-64 ml-24 rounded-full bg-gradient-to-br from-${secondThirdColor}-300 to-${secondThirdColor}-800 opacity-75`}></div>
+        <div class={"absolute w-20 h-20 lg:w-64 lg:h-64 rounded-full bg-gradient-to-br from-purple-300 to-purple-100 opacity-75"}></div>
+        <div class={"absolute w-16 h-16 lg:w-56 lg:h-56 mt-8 ml-10 lg:mt-24 lg:ml-12 rounded-full bg-gradient-to-br from-emerald-100 to-emerald-300 opacity-75"}></div>
+        <div class={"absolute w-20 h-20 lg:w-64 lg:h-64 ml-24 rounded-full bg-gradient-to-br from-sky-100 to-sky-300 opacity-75"}></div>
     </div>
 </div>
