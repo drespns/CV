@@ -1,8 +1,46 @@
 ---
 import Section from '../Section.astro'
 
+import { projects } from '../../../cv.json'
 ---
 
 <Section title='Proyectos'>
-    
+    <ul class="grid grid-cols-projects gap-4">
+        {
+            projects.map(({ name, isActive, description, highlights, github, url, imageUrl }) => {
+                return (
+                    <li
+                        class="border-2 border-slate-600 rounded-xl shadow-xs hover:shadow-lg hover:scale-[1.02] bg-cover bg-center bg-no-repeat bg-opacity-10 grayscale hover:grayscale-0 hover:saturate-150 transition-colors duration-200 ease-out"
+                        style={`background-image: url(${imageUrl});`}
+                    >
+                        <article class="p-4 flex flex-col gap-4">
+                        {/* ${imageUrl} */}
+                            <header>
+                                <a
+                                    href={url}
+                                    title={`Ver el proyecto ${name}`}
+                                    rel="noopener noreferrer"
+                                    target="_blank"
+                                >
+                                    <h3 class="text-base">{name}</h3>
+                                </a>
+                                <p class="text-sm">
+                                    {description}
+                                </p>
+                            </header>
+                            <footer>
+                                <ul>
+                                    {
+                                        highlights.map((highlight) => {
+                                            return <li>{highlight}</li>
+                                        })
+                                    }
+                                </ul>
+                            </footer>
+                        </article>
+                    </li>
+                )
+            })
+        }
+    </ul>
 </Section>
