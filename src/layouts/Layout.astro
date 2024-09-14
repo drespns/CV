@@ -12,13 +12,30 @@ const { title } = Astro.props;
 		<meta charset="UTF-8" />
 		<meta name="author" content="Daniel Rguez Espinosa">
 		<meta name="description" content="My flabbergastingly outlandish CV!" />
+		<!-- <meta name="preview" content=""> -->
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:title" content="Portfolio - CV">
+		<meta name="twitter:description" content="Un portfolio minimalista; por ahora.">
+		<meta name="twitter:image" content="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2023/08/goku-super-saiyan-4-goku-ultra-instinto-batalla-siglo-ha-estallado-nuevo-capitulo-anime-dragon-ball-tenemos-ganador-oficial-3116826.jpg?tf=3840x">
+
+		<meta property="og:site_name" content="Portfolio - CV">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://cv-drespns.vercel.app">
+		<meta property="og:title" content="Portfolio - CV">
+		<meta property="og:description" content="Un portfolio minimalista; por ahora.">
+		<meta property="og:image" content="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2023/08/goku-super-saiyan-4-goku-ultra-instinto-batalla-siglo-ha-estallado-nuevo-capitulo-anime-dragon-ball-tenemos-ganador-oficial-3116826.jpg?tf=3840x">
+
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+		<!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> -->
 	</head>
 	<body>
 		<slot />
