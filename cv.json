@@ -2,7 +2,9 @@
   "basics": {
     "name": "Daniel Rodríguez Espinosa",
     "label": "Matemático; futuro Data Scientist y Full-Stack Web Developer",
-    "image": "https://avatars.githubusercontent.com/u/135058430?v=4",
+    "primaryImage": "https://avatars.githubusercontent.com/u/135058430?v=4",
+    "secondaryImage": "/favicon.gif",
+    "githubImage": "https://avatars.githubusercontent.com/u/135058430?v=4",
     "email": "drespns@gmail.com",
     "phone": "+34 636-059-886",
     "url": "https://google.com",
@@ -49,6 +51,40 @@
   ],
   "education": [
     {
+      "institution": "Valencian International University (VIU)",
+      "url": "https://www.universidadviu.com/es/master-universitario-big-data-data-science",
+      "area": "Big Data",
+      "studyType": "Máster Oficial",
+      "startDate": "2024-04-17",
+      "endDate": "2025-03-25",
+      "score": "4.0",
+      "courses": [
+        "Fundamentos de la tecnología Big Data",
+        "Procesamiento de Datos Masivos",
+        "Estadística Avanzada",
+        "Machine Learning",
+        "Visualización de Datos",
+        "Riesgos ...",
+        "Cloud Computing"
+      ],
+      "tfmgUrl": "#"
+    },
+    {
+      "institution": "Valencian International University (VIU)",
+      "url": "https://www.universidadviu.com/es/curso-programacion-python",
+      "area": "Programación en Python",
+      "studyType": "Diploma",
+      "startDate": "2023-04-16",
+      "endDate": "2023-10-25",
+      "score": "4.0",
+      "courses": [
+        "Introducción a la Programación",
+        "Programación Avanzada",
+        "Bases de Datos",
+        "Machine Learning"
+      ]
+    },
+    {
       "institution": "Universidad de La Laguna (ULL)",
       "url": "https://www.ull.es/grados/matematicas/",
       "area": "Matemáticas",
@@ -62,37 +98,8 @@
         "Estadística",
         "Inferencia Estadística",
         "Análisis"
-      ]
-    },
-    {
-      "institution": "Valencian International University (VIU)",
-      "url": "https://www.universidadviu.com/es/curso-programacion-python",
-      "area": "Matemáticas",
-      "studyType": "Grado",
-      "startDate": "2023-04-16",
-      "endDate": "2023-10-25",
-      "score": "4.0",
-      "courses": [
-        "Introducción a la Programación",
-        "Programación Avanzada",
-        "Bases de Datos",
-        "Machine Learning"
-      ]
-    },
-    {
-      "institution": "Valencian International University (VIU)",
-      "url": "https://www.universidadviu.com/es/master-universitario-big-data-data-science",
-      "area": "Big Data",
-      "studyType": "Máster Oficial",
-      "startDate": "2024-04-17",
-      "endDate": "2025-03-XX",
-      "score": "4.0",
-      "courses": [
-        "Fundamentos de la tecnología Big Data",
-        "Procesamiento de Datos Masivos",
-        "Estadística Avanzada",
-        "Machine Learning"
-      ]
+      ],
+      "tfmgUrl": "https://google.com"
     }
   ],
   "certificates": [
@@ -115,25 +122,25 @@
   "skillsFrontEnd": [
     {
       "name": "HTML",
-      "level": "Intermedio-Avanzado",
+      "level": "Avanzado",
       "keywords": ["Desarrollo Web", "Frontend"],
       "bgColor": "241,101,41,.15"
     },
     {
       "name": "CSS",
-      "level": "Intermedio-Avanzado",
+      "level": "Avanzado",
       "keywords": ["Desarrollo Web", "Frontend", "Diseño Responsive"],
       "bgColor": "50,169,220,.15"
     },
     {
       "name": "JavaScript",
-      "level": "Básico-Intermedio",
+      "level": "Intermedio",
       "keywords": ["Desarrollo Web", "Frontend", "Backend", "Fullstack"],
       "bgColor": "240,219,79,.25"
     },
     {
       "name": "TailwindCSS",
-      "level": "Intermedio-Avanzado",
+      "level": "Avanzado",
       "keywords": [
         "Desarrollo Web",
         "Frontend",
@@ -141,6 +148,17 @@
         "Diseño Responsive"
       ],
       "bgColor": "56,189,248,.10"
+    },
+    {
+      "name": "Astro4",
+      "level": "Intermedio",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "CSS Framework",
+        "Diseño Responsive"
+      ],
+      "bgColor": "255,22,57,.15"
     },
     {
       "name": "TypeScript",
@@ -161,9 +179,15 @@
     },
     {
       "name": "ThreeJS",
-      "level": "Aprendiendo",
+      "level": "Básico",
       "keywords": ["Desarrollo Web", "Frontend", "JavaScript Library", "UI"],
       "bgColor": "0,0,0,.15"
+    },
+    {
+      "name": "Blender",
+      "level": "Aprendiendo",
+      "keywords": ["Desarrollo Web", "Frontend", "JavaScript Library", "UI"],
+      "bgColor": "232,117,0,.15"
     }
   ],
   "skillsBackEnd": [
@@ -181,7 +205,7 @@
     },
     {
       "name": "MySQL",
-      "level": "Intermedio-Avanzado",
+      "level": "Avanzado",
       "keywords": [
         "Bases de Datos",
         "SQL",
@@ -192,7 +216,7 @@
     },
     {
       "name": "Git",
-      "level": "Intermedio",
+      "level": "Avanzado",
       "keywords": ["Control de Versiones", "Colaboración", "Código Fuente"],
       "bgColor": "241,101,41,.25"
     }
@@ -200,19 +224,19 @@
   "skillsBigData": [
     {
       "name": "Python",
-      "level": "Avanzado",
+      "level": "Avanzado-Experto",
       "keywords": ["Desarrollo Web", "Backend", "JavaScript", "Servidor"],
       "bgColor": "241,101,41,.25"
     },
     {
       "name": "Selenium",
-      "level": "Avanzado",
+      "level": "Experto",
       "keywords": ["Desarrollo Web", "Backend", "JavaScript", "Servidor"],
       "bgColor": "241,101,41,.25"
     },
     {
       "name": "NumPy",
-      "level": "Intermedio-Avanzado",
+      "level": "Intermedio",
       "keywords": [
         "Bases de Datos",
         "SQL",
@@ -241,7 +265,7 @@
     },
     {
       "name": "R",
-      "level": "Básico-Intermedio",
+      "level": "Básico",
       "keywords": ["Control de Versiones", "Colaboración", "Código Fuente"],
       "bgColor": "241,101,41,.25"
     }
