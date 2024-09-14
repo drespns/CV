@@ -1,12 +1,15 @@
 ---
 import Section from '../Section.astro'
 
+import SkillsComponent from '../SkillsComponent.astro'
+
 // ICONS
 // Front-End
 import HTML from '../../assets/svg/HTML.astro'
 import CSS from '../../assets/svg/CSS.astro'
 import JavaScript from '../../assets/svg/JavaScript.astro'
 import TailwindCSS from '../../assets/svg/TailwindCSS.astro'
+import Astro4 from '../../assets/svg/Astro4.astro'
 import TypeScript from '../../assets/svg/TypeScript.astro'
 import React from '../../assets/svg/React.astro'
 import ThreeJS from '../../assets/svg/ThreeJS.astro'
@@ -32,6 +35,7 @@ const SKILLS_FRONTEND_ICONS: Record<string, any> = {
     CSS,
     JavaScript,
     TailwindCSS,
+    Astro4,
     TypeScript,
     React,
     ThreeJS,
@@ -54,59 +58,94 @@ const SKILLS_BIGDATA_ICONS: Record<string, any> = {
 }
 ---
 
-<Section title='Habilidades'>
+<Section title='Tecnologías'>
+    <!-- <section class="flex flex-col"></section> -->
+
     <!-- Front-End -->
-    <span class="bg-clip-text text-transparent bg-gradient-to-r from-slate-400 border-t-violet-400">Front-End</span>
-    <div class="flex flex-row gap-1 items-center flex-wrap flex-initial w-full justify-center lg:justify-start">
+    <SkillsComponent title="Front-End" >
         {
             skillsFrontEnd.map(({ name, level, keywords, bgColor }) => {
                 const Icon = SKILLS_FRONTEND_ICONS[name]
-                const bgStyle = `background-color: rgb(${bgColor})`;
+                name = name.replaceAll('4', '')
 
+                const bgStyle = `background-color: rgb(${bgColor})`;
+                
                 return (
-                    <button
-                        class="border-2 border-solid border-slate-500 p-2 rounded-full shadow-md hover:shadow-2xl hover:scale-105 hover:saturate-150 drop-shadow-2xl"
-                        style={bgStyle}
-                        title={`${name} ${level}`}
+                    <span
+                        class="flex flex-col gap-1 justify-center items-center outline-2 outline-purple-400 rounded-full min-w-20 h-auto "
+                        title="Aprendiendo • Básico • Intermedio • Avanzado • Experto"
                     >
-                        <Icon />
-                    </button>
+                        <button
+                            class="border-2 border-solid border-slate-500 p-2 rounded-full shadow-md hover:shadow-2xl hover:scale-105 hover:saturate-150 drop-shadow-2xl"
+                            style={bgStyle}
+                            title={`${name} ${level}`}
+                        >
+                            <Icon />
+                        </button>
+                        <span class="flex flex-col gap-[2px] text-pretty">
+                            <span class="italic text-sm text-center [text-shadow:_0_2px_15px_rgb(77_133_222_/_75%)]">{name}</span>
+                            <span class="text-xs text-center font-semibold text-black">{level}</span>
+                        </span>
+                    </span>
                 )
             })
         }
-    </div>
+    </SkillsComponent>
+
     <!-- Back-End -->
-    <span class="bg-clip-text text-transparent bg-gradient-to-r from-slate-400 border-t-violet-400">Back-End</span>
-    <div class="flex flex-row gap-1 items-center flex-wrap flex-initial w-full justify-center lg:justify-start">
+    <SkillsComponent title="Back-End" >
         {
             skillsBackEnd.map(({ name, level, keywords, bgColor }) => {
                 const Icon = SKILLS_BACKEND_ICONS[name]
 
                 return (
-                    <button
-                        class="border-2 border-solid border-slate-500 p-2 rounded-full shadow-md hover:shadow-2xl hover:scale-105 hover:saturate-150 drop-shadow-2xl"
+                    <span
+                        class="flex flex-col gap-1 justify-center items-center outline-2 outline-purple-400 rounded-full min-w-20 h-auto "
+                        title="Aprendiendo • Básico • Intermedio • Avanzado • Experto"
                     >
-                        <Icon />
-                    </button>
+                        <button
+                            class="border-2 border-solid border-slate-500 p-2 rounded-full shadow-md hover:shadow-2xl hover:scale-105 hover:saturate-150 drop-shadow-2xl"
+                            title={`${name} ${level}`}
+                        >
+                            <Icon />
+                        </button>
+                        <span class="flex flex-col gap-[2px] text-pretty">
+                            <span class="italic text-sm text-center [text-shadow:_0_2px_15px_rgb(77_133_222_/_75%)]">
+                                {name}
+                            </span>
+                            <span class="text-xs text-center font-semibold text-black">
+                                {level}
+                            </span>
+                        </span>
+                    </span>
                 )
             })
         }
-    </div>
+    </SkillsComponent>
+
     <!-- Big Data -->
-    <span class="bg-clip-text text-transparent bg-gradient-to-r from-slate-400 border-t-violet-400">Big Data</span>
-    <div class="flex flex-row gap-1 items-center flex-wrap flex-initial w-full justify-center lg:justify-start">
+    <SkillsComponent title="Big Data" >
         {
             skillsBigData.map(({ name, level, keywords, bgColor }) => {
                 const Icon = SKILLS_BIGDATA_ICONS[name]
 
                 return (
-                    <button
-                        class="border-2 border-solid border-slate-500 p-2 rounded-full shadow-md hover:shadow-2xl hover:scale-105 hover:saturate-150 drop-shadow-2xl"
+                    <span
+                        class="flex flex-col gap-1 justify-center items-center outline-2 outline-purple-400 rounded-full min-w-20 h-auto "
+                        title="Aprendiendo • Básico • Intermedio • Avanzado • Experto"
                     >
-                        <Icon />
-                    </button>
+                        <button
+                            class="border-2 border-solid border-slate-500 p-2 rounded-full shadow-md hover:shadow-2xl hover:scale-105 hover:saturate-150 drop-shadow-2xl"
+                            title={`${name} ${level}`}
+                        >
+                            <Icon />
+                        </button>
+                        <span class="italic text-sm text-center [text-shadow:_0_2px_15px_rgb(77_133_222_/_75%)]">
+                            {name}
+                        </span>
+                    </span>
                 )
             })
         }
-    </div>
+    </SkillsComponent>
 </Section>

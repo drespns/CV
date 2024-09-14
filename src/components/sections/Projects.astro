@@ -13,14 +13,15 @@ import { projects } from '../../../cv.json'
                         class="border-2 border-slate-600 rounded-xl shadow-xs hover:shadow-lg hover:scale-[1.02] bg-cover bg-center bg-no-repeat bg-opacity-10 grayscale hover:grayscale-0 hover:saturate-150 transition-colors duration-200 ease-out"
                         style={`background-image: url(${imageUrl});`}
                     >
-                        <article class="p-4 flex flex-col gap-4">
+                        <article class="p-4 flex flex-col gap-4 h-full">
                         {/* ${imageUrl} */}
-                            <header>
+                            <header class="grow">
                                 <a
                                     href={url}
                                     title={`Ver el proyecto ${name}`}
                                     rel="noopener noreferrer"
                                     target="_blank"
+                                    // class="hover:underline hover:decoration-indigo-600"
                                 >
                                     <h3 class="text-base">{name}</h3>
                                 </a>

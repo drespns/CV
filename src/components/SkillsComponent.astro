@@ -1,0 +1,11 @@
+---
+const { title } = Astro.props
+---
+<section>
+    <h3 class="bg-clip-text text-transparent bg-gradient-to-r from-slate-400 to-violet-400 mb-2 mt-4">
+        {title}
+    </h3>
+    <div class="flex flex-row gap-1 items-center flex-wrap flex-initial w-full justify-center max-w-2xl mx-auto">
+        <slot />
+    </div>
+</section>
