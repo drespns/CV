@@ -8,7 +8,7 @@ import LinkedIn from '../../assets/svg/media/Linkedin.astro'
 import GitHub from '../../assets/svg/media/GitHub.astro'
 import Instagram from '../../assets/svg/media/Instagram.astro'
 
-const { name, label, image, email, location, summary, url, phone, profiles } = basics
+const { name, label, primaryImage, secondaryImage, githubImage, email, location, url, phone, profiles } = basics
 const SOCIAL_ICONS: Record<string, any> = {
     // profiles
     GitHub,
@@ -16,6 +16,15 @@ const SOCIAL_ICONS: Record<string, any> = {
     Instagram
 }
 const { city, region } = location
+
+let hoverState = ''
+const showGithubImage = (image: string) => {
+    hoverState = image.includes('github') ? image : ''
+}
+const hideGithubImage = () => hoverState = ''
+
+const linkedInURL = profiles.find(({ network }) => network === 'LinkedIn')?.url
+const printInfo = [email, phone, linkedInURL].filter(Boolean).join(" • ")
 ---
 
 <Section >
@@ -29,6 +38,11 @@ const { city, region } = location
                 {city}, {region}
             </span>
             <footer class="flex flex-row gap-10 mt-6">
+                
+                <!-- PRINT -->
+                <div class="print">
+                    {printInfo}
+                </div>
                 <div class="flex flex-row gap-1 items-center">
                     {
                         email && (
@@ -43,20 +57,21 @@ const { city, region } = location
                             </a>
                         )
                     }
-                    <!-- {
+                    {
                         phone && (
                             <a
-                                href={`tel:${phone}`}
-                                title={`Llamar por teléfono a ${name} al número ${phone}`}
+                                href='#'
+                                title={`Llamar por teléfono a ${name} al número ${name}`}
                                 target="_blank"
                                 rel="noopener noreferrer"
+                                class="border-2 border-solid border-slate-500 p-2 rounded-full shadow-md hover:shadow-2xl hover:scale-105 hover:saturate-150 drop-shadow-2xl"
                             >
                                 <Phone />
                             </a>
                         )
-                    } -->
+                    }
                 </div>
-                <div class="flex flex-row gap-1 items-center">
+                <div class="flex flex-row gap-1 items-center" onmouseenter="">
                     {
                         profiles.map(({ network, url, username }) => {
                             const Icon = SOCIAL_ICONS[network]
@@ -68,6 +83,8 @@ const { city, region } = location
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     class="border-2 border-solid border-slate-500 p-2 rounded-full shadow-md hover:shadow-2xl hover:scale-105 hover:saturate-150 drop-shadow-2xl"
+                                    data-network={network}
+                                    onmouseenter='{(url) => showGithubImage}'
                                 >
                                     <Icon />
                                 </a>
@@ -77,17 +94,39 @@ const { city, region } = location
                 </div>
             </footer>
         </div>
-        <figure class="bg-cover">
-            <img class="w-64 h-auto drop-shadow-2xl" src={image} alt={name}>
-            <!-- .magicpattern { 
-                width: 100%;
-                height: 100%;
-                background-size: cover;
-                background-position: center center;
-                background-repeat: repeat;
-                background-image: url("data:image/svg+xml;utf8,%3Csvg viewBox=%220 0 1000 1000%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cdefs%3E%3CclipPath id=%22a%22%3E%3Cpath fill=%22currentColor%22 d=%22M778.5 671.5Q698 843 511 823.5T212.5 652Q101 500 220 361t300-174q181-35 260 139t-1.5 345.5Z%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3Cg clip-path=%22url(%23a)%22%3E%3Cpath fill=%22%23444cf7%22 d=%22M778.5 671.5Q698 843 511 823.5T212.5 652Q101 500 220 361t300-174q181-35 260 139t-1.5 345.5Z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
-            }   
-            -->
+        <figure class="relative w-64 h-auto drop-shadow-2xl bg-cover bg-center outline-[24px] outline-slate-800">
+            <!-- Main -->
+            <img
+                class="w-full h-auto transition-opacity duration-300"
+                src={primaryImage}
+                alt={name}
+            />
+          
+            <!-- Hover -->
+            <img
+                class="absolute top-0 left-0 w-full h-full opacity-0 hover:opacity-100 transition-opacity duration-300"
+                src={hoverState ? githubImage : secondaryImage}
+                alt={`${name} hover`}
+                ondblclick=""
+            />
         </figure>
     </div>
 </Section>
+
+<style>
+    .print {
+        display: none;
+    }
+    @media print {
+        .print {
+            display: block;
+        }
+    }
+</style>
+<!-- <script>
+    let hoverState = ''
+    const showGithubImage = (image: string) => {
+        hoverState = image.includes('github') ? image : ''
+    }
+    const hideGithubImage = () => hoverState = ''
+</script> -->
