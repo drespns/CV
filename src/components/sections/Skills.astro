@@ -2,6 +2,7 @@
 import Section from '../Section.astro'
 
 // ICONS
+// Front-End
 import HTML from '../../assets/svg/HTML.astro'
 import CSS from '../../assets/svg/CSS.astro'
 import JavaScript from '../../assets/svg/JavaScript.astro'
@@ -9,14 +10,24 @@ import TailwindCSS from '../../assets/svg/TailwindCSS.astro'
 import TypeScript from '../../assets/svg/TypeScript.astro'
 import React from '../../assets/svg/React.astro'
 import ThreeJS from '../../assets/svg/ThreeJS.astro'
+import Blender from '../../assets/svg/Blender.astro'
+// Back-End
 import NodeJS from '../../assets/svg/NodeJS.astro'
 import Express from '../../assets/svg/Express.astro'
 import MySQL from '../../assets/svg/MySQL.astro'
 import Git from '../../assets/svg/Git.astro'
+// Big Data
+import Python from '../../assets/svg/Python.astro'
+import Selenium from '../../assets/svg/Selenium.astro'
+import NumPy from '../../assets/svg/NumPy.astro'
+import Pandas from '../../assets/svg/Pandas.astro'
+import Keras from '../../assets/svg/Keras.astro'
+import MongoDB from '../../assets/svg/MongoDB.astro'
+import R from '../../assets/svg/R.astro'
 
-import { skills } from '../../../cv.json'
+import { skillsFrontEnd, skillsBackEnd, skillsBigData } from '../../../cv.json'
 // const { name, level, keywords } = skills
-const SKILLS_ICONS: Record<string, any> = {
+const SKILLS_FRONTEND_ICONS: Record<string, any> = {
     HTML,
     CSS,
     JavaScript,
@@ -24,21 +35,74 @@ const SKILLS_ICONS: Record<string, any> = {
     TypeScript,
     React,
     ThreeJS,
+    Blender,
+}
+const SKILLS_BACKEND_ICONS: Record<string, any> = {
     NodeJS,
     Express,
     MySQL,
     Git
 }
+const SKILLS_BIGDATA_ICONS: Record<string, any> = {
+    Python,
+    Selenium,
+    NumPy,
+    Pandas,
+    Keras,
+    MongoDB,
+    R
+}
 ---
 
 <Section title='Habilidades'>
-    <div class="flex flex-row gap-1 items-center">
+    <!-- Front-End -->
+    <span class="bg-clip-text text-transparent bg-gradient-to-r from-slate-400 border-t-violet-400">Front-End</span>
+    <div class="flex flex-row gap-1 items-center flex-wrap flex-initial w-full justify-center lg:justify-start">
         {
-            skills.map(({ name, level, keywords, bgColor }) => {
-                const Icon = SKILLS_ICONS[name]
+            skillsFrontEnd.map(({ name, level, keywords, bgColor }) => {
+                const Icon = SKILLS_FRONTEND_ICONS[name]
+                const bgStyle = `background-color: rgb(${bgColor})`;
 
                 return (
-                    <button class="border-2 border-solid border-slate-500 p-2 rounded-full shadow-md hover:shadow-2xl hover:scale-105 hover:saturate-150 drop-shadow-2xl bg-orange-200/50">
+                    <button
+                        class="border-2 border-solid border-slate-500 p-2 rounded-full shadow-md hover:shadow-2xl hover:scale-105 hover:saturate-150 drop-shadow-2xl"
+                        style={bgStyle}
+                        title={`${name} ${level}`}
+                    >
+                        <Icon />
+                    </button>
+                )
+            })
+        }
+    </div>
+    <!-- Back-End -->
+    <span class="bg-clip-text text-transparent bg-gradient-to-r from-slate-400 border-t-violet-400">Back-End</span>
+    <div class="flex flex-row gap-1 items-center flex-wrap flex-initial w-full justify-center lg:justify-start">
+        {
+            skillsBackEnd.map(({ name, level, keywords, bgColor }) => {
+                const Icon = SKILLS_BACKEND_ICONS[name]
+
+                return (
+                    <button
+                        class="border-2 border-solid border-slate-500 p-2 rounded-full shadow-md hover:shadow-2xl hover:scale-105 hover:saturate-150 drop-shadow-2xl"
+                    >
+                        <Icon />
+                    </button>
+                )
+            })
+        }
+    </div>
+    <!-- Big Data -->
+    <span class="bg-clip-text text-transparent bg-gradient-to-r from-slate-400 border-t-violet-400">Big Data</span>
+    <div class="flex flex-row gap-1 items-center flex-wrap flex-initial w-full justify-center lg:justify-start">
+        {
+            skillsBigData.map(({ name, level, keywords, bgColor }) => {
+                const Icon = SKILLS_BIGDATA_ICONS[name]
+
+                return (
+                    <button
+                        class="border-2 border-solid border-slate-500 p-2 rounded-full shadow-md hover:shadow-2xl hover:scale-105 hover:saturate-150 drop-shadow-2xl"
+                    >
                         <Icon />
                     </button>
                 )
