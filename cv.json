@@ -6,7 +6,7 @@
     "email": "drespns@gmail.com",
     "phone": "+34 636-059-886",
     "url": "https://google.com",
-    "summary": "+2 años de experiencia programando en Python. 6 meses aprendiendo Desarrollo Web. Actualmente acabo de dejar un trabajo como becario como Analista de Datos; con vistas a emplear mi tiempo completo al máster y aprender Desarrollo Web... Vivo en Tenerife, España. Mi tareas principales en la empresa eran las de: llevar el control de versiones (Git) de nuestros 'pequeños' proyectos (ML, extracción de datos, ...), scraping, ...",
+    "summary": "1.5+ años de experiencia programando en Python. 6 meses aprendiendo Desarrollo Web. Finalicé una beca de inserción laboral para dedicarme a tiempo completo a formarme con mayor profundidad en el Desarrollo Web y el Máster en Big Data. Mi tareas principales en la empresa eran las de: llevar el control de versiones (Git) de nuestros 'pequeños' proyectos, scraping principalmente con Selenium, limpieza y visualización de datos con Tableau. Vivo en Tenerife, España 🇪🇸 y tengo 26 años 👨🏽‍🦲.",
     "location": {
       "address": "",
       "postalCode": "38108",
@@ -34,67 +34,64 @@
   },
   "work": [
     {
-      "name": "drespns",
+      "name": "drodesp",
       "position": "Data Scientist",
-      "url": "https://google.com",
+      "company": "Servicios Avanzados de Opinión S.L.",
+      "url": "https://saosl.com",
       "startDate": "2024-03-25",
       "endDate": "2024-09-25",
-      "summary": "...",
-      "highlights": ["Incluí "]
-    }
-  ],
-  "volunteer": [
-    {
-      "organization": "Organization",
-      "position": "Volunteer",
-      "url": "https://organization.com/",
-      "startDate": "2012-01-01",
-      "endDate": "2013-01-01",
-      "summary": "Description…",
-      "highlights": ["Awarded 'Volunteer of the Month'"]
+      "summary": "Git, ...",
+      "highlights": [
+        "...",
+        "..."
+      ]
     }
   ],
   "education": [
     {
       "institution": "Universidad de La Laguna (ULL)",
-      "url": "https://www.uoc.edu/portal/es/index.html",
+      "url": "https://www.ull.es/grados/matematicas/",
       "area": "Matemáticas",
       "studyType": "Grado",
-      "startDate": "2016-09-01",
+      "startDate": "2016-09-13",
       "endDate": "2022-09-10",
       "score": "4.0",
       "courses": [
         "Galois",
         "Introducción a la Programación",
-        "..."
+        "Estadística",
+        "Inferencia Estadística",
+        "Análisis"
       ]
     },
     {
       "institution": "Valencian International University (VIU)",
-      "url": "https://www.uoc.edu/portal/es/index.html",
+      "url": "https://www.universidadviu.com/es/curso-programacion-python",
       "area": "Matemáticas",
       "studyType": "Grado",
-      "startDate": "2016-09-01",
-      "endDate": "2022-09-10",
+      "startDate": "2023-04-16",
+      "endDate": "2023-10-25",
       "score": "4.0",
       "courses": [
-        "Galois",
         "Introducción a la Programación",
-        "..."
+        "Programación Avanzada",
+        "Bases de Datos",
+        "Machine Learning"
       ]
     },
     {
       "institution": "Valencian International University (VIU)",
-      "url": "https://www.uoc.edu/portal/es/index.html",
-      "area": "Matemáticas",
-      "studyType": "Grado",
-      "startDate": "2016-09-01",
-      "endDate": "2022-09-10",
+      "url": "https://www.universidadviu.com/es/master-universitario-big-data-data-science",
+      "area": "Big Data",
+      "studyType": "Máster Oficial",
+      "startDate": "2024-04-17",
+      "endDate": "2025-03-XX",
       "score": "4.0",
       "courses": [
-        "Galois",
-        "Introducción a la Programación",
-        "..."
+        "Fundamentos de la tecnología Big Data",
+        "Procesamiento de Datos Masivos",
+        "Estadística Avanzada",
+        "Machine Learning"
       ]
     }
   ],
@@ -115,24 +112,24 @@
       "summary": "Description…"
     }
   ],
-  "skills": [
+  "skillsFrontEnd": [
     {
       "name": "HTML",
       "level": "Intermedio-Avanzado",
       "keywords": ["Desarrollo Web", "Frontend"],
-      "bgColor": "orange"
+      "bgColor": "241,101,41,.15"
     },
     {
       "name": "CSS",
       "level": "Intermedio-Avanzado",
       "keywords": ["Desarrollo Web", "Frontend", "Diseño Responsive"],
-      "bgColor": "orange"
+      "bgColor": "50,169,220,.15"
     },
     {
       "name": "JavaScript",
       "level": "Básico-Intermedio",
       "keywords": ["Desarrollo Web", "Frontend", "Backend", "Fullstack"],
-      "bgColor": "orange"
+      "bgColor": "240,219,79,.25"
     },
     {
       "name": "TailwindCSS",
@@ -143,7 +140,7 @@
         "CSS Framework",
         "Diseño Responsive"
       ],
-      "bgColor": "orange"
+      "bgColor": "56,189,248,.10"
     },
     {
       "name": "TypeScript",
@@ -154,31 +151,33 @@
         "Backend",
         "JavaScript Superset"
       ],
-      "bgColor": "orange"
+      "bgColor": "0,122,204,.15"
     },
     {
       "name": "React",
       "level": "Básico",
       "keywords": ["Desarrollo Web", "Frontend", "JavaScript Library", "UI"],
-      "bgColor": "orange"
+      "bgColor": "97,218,251,.15"
     },
     {
       "name": "ThreeJS",
       "level": "Aprendiendo",
       "keywords": ["Desarrollo Web", "Frontend", "JavaScript Library", "UI"],
-      "bgColor": "orange"
-    },
+      "bgColor": "0,0,0,.15"
+    }
+  ],
+  "skillsBackEnd": [
     {
       "name": "NodeJS",
       "level": "Básico",
       "keywords": ["Desarrollo Web", "Backend", "JavaScript", "Servidor"],
-      "bgColor": "orange"
+      "bgColor": "241,101,41,.25"
     },
     {
       "name": "Express",
       "level": "Básico",
       "keywords": ["Desarrollo Web", "Backend", "JavaScript", "Servidor"],
-      "bgColor": "orange"
+      "bgColor": "241,101,41,.25"
     },
     {
       "name": "MySQL",
@@ -189,13 +188,62 @@
         "Almacenamiento de Datos",
         "Backend"
       ],
-      "bgColor": "orange"
+      "bgColor": "241,101,41,.25"
     },
     {
       "name": "Git",
       "level": "Intermedio",
       "keywords": ["Control de Versiones", "Colaboración", "Código Fuente"],
-      "bgColor": "orange"
+      "bgColor": "241,101,41,.25"
+    }
+  ],
+  "skillsBigData": [
+    {
+      "name": "Python",
+      "level": "Avanzado",
+      "keywords": ["Desarrollo Web", "Backend", "JavaScript", "Servidor"],
+      "bgColor": "241,101,41,.25"
+    },
+    {
+      "name": "Selenium",
+      "level": "Avanzado",
+      "keywords": ["Desarrollo Web", "Backend", "JavaScript", "Servidor"],
+      "bgColor": "241,101,41,.25"
+    },
+    {
+      "name": "NumPy",
+      "level": "Intermedio-Avanzado",
+      "keywords": [
+        "Bases de Datos",
+        "SQL",
+        "Almacenamiento de Datos",
+        "Backend"
+      ],
+      "bgColor": "241,101,41,.25"
+    },
+    {
+      "name": "Pandas",
+      "level": "Intermedio",
+      "keywords": ["Control de Versiones", "Colaboración", "Código Fuente"],
+      "bgColor": "241,101,41,.25"
+    },
+    {
+      "name": "Keras",
+      "level": "Intermedio",
+      "keywords": ["Control de Versiones", "Colaboración", "Código Fuente"],
+      "bgColor": "241,101,41,.25"
+    },
+    {
+      "name": "MongoDB",
+      "level": "Intermedio",
+      "keywords": ["Control de Versiones", "Colaboración", "Código Fuente"],
+      "bgColor": "241,101,41,.25"
+    },
+    {
+      "name": "R",
+      "level": "Básico-Intermedio",
+      "keywords": ["Control de Versiones", "Colaboración", "Código Fuente"],
+      "bgColor": "241,101,41,.25"
     }
   ],
   "languages": [
@@ -210,26 +258,65 @@
   ],
   "interests": [
     {
-      "name": "Wildlife",
+      "name": "Speedcubing",
       "keywords": ["Ferrets", "Unicorns"]
     },
     {
-      "name": "Wildlife",
-      "keywords": ["Ferrets", "Unicorns"]
+      "name": "Anime",
+      "keywords": ["Blue Giant", "Dragon Ball", "One Piece", "Jujutsu Kaisen", "Shingeki no Kyojin", "Sousou no Frieren", "Ping Pong the Animation", "Uchuu Kyoudai", "Mob Psycho 100", "Kimetsu no Yaiba", "Dandadan"]
     },
     {
-      "name": "Wildlife",
-      "keywords": ["Ferrets", "Unicorns"]
+      "name": "Calisthenics",
+      "keywords": ["Pull Up", "Muscle Up", "Push Up", "Dip", "Front Lever", "OAP"]
     },
     {
-      "name": "Wildlife",
-      "keywords": ["Ferrets", "Unicorns"]
+      "name": "Beach 🏝️",
+      "keywords": ["Teresitas", "Tabaiba"]
     }
   ],
   "references": [
     {
       "name": "Jane Doe",
       "reference": "Reference…"
+    }
+  ],
+  "projects": [
+    {
+      "name": "My very first 3D project",
+      "isActive": true,
+      "description": "Muchos donuts :)",
+      "highlights": ["Mi primer proyecto", "HTML & JavaScript & ThreeJS"],
+      "url": "https://my-very-first-3d-project.vercel.app/",
+      "imageUrl": "/projects/donuts.png"
+    },
+    {
+      "name": "Galaxy 3D",
+      "isActive": true,
+      "description": "Una galaxy en rotación con parámetros...",
+      "highlights": [
+        "+0 millón de visitas",
+        "Qué pequeños somos en el universo",
+        "HTML & JavaScript & ThreeJS"
+      ],
+      "url": "https://galaxy-3d-project.vercel.app/",
+      "imageUrl": "/projects/galaxy.png"
+    },
+    {
+      "name": "My outlandish house",
+      "isActive": true,
+      "description": "Juego interactivo de programación con retos y secretos",
+      "highlights": ["+0 usuarios activos", "Texturas"],
+      "url": "https://outlandish-house-3d-project.vercel.app/",
+      "imageUrl": "/projects/house.png"
+    },
+    {
+      "name": "AppleTV",
+      "isActive": true,
+      "description": "TailwindCSS, Framer Motion",
+      "highlights": ["100k visitas al mes", "Desarrollado por la comunidad"],
+      "url": "https://www.apple.com/es/apple-tv-plus/",
+      "imageUrl": "/projects/apple-tv.png",
+      "github": "https://github.com/drespns"
     }
   ]
 }
