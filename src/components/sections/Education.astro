@@ -9,7 +9,7 @@ import { education } from '../../../cv.json'
 <Section title='Educación'>
     <ul class="flex flex-col gap-8">
         {
-            education.map(({ institution, url, area, studyType, startDate, endDate, courses, tfmgUrl }) => {
+            education.map(({ institution, url, area, studyType, startDate, endDate, courses, technologies, tfmgUrl }) => {
                 const actualDate = new Date(Date.now())//.getFullYear()
                 const actualYear = new Date(Date.now()).getFullYear()
 
@@ -31,9 +31,9 @@ import { education } from '../../../cv.json'
                 
                 return (
                     <li class="border-b-[1px] border-slate-500 rounded-b-2xl hover:outline-2 hover:shadow-md">
-                        <article class="p-4 flex flex-col gap-6">
+                        <article class="p-4 flex flex-col gap-6 justify-between">
                             <header class="flex flex-row justify-between items-start">
-                                <div class="">
+                                <div class="truncate">
                                     <h3 class="font-semibold">{institution}</h3>
                                     <h4>{studyType}</h4>
                                     <h5>{area}</h5>
@@ -44,20 +44,42 @@ import { education } from '../../../cv.json'
                                             title={`Trabajando en ${institution} durante ${years}`}
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            class="hover:after:content-['_↗']"
+                                            class="hover:before:content-['_↗'] hover:before:mr-2 w-full"
                                         >{tfmgUrl}</a>
                                     }
                                 </div>
 
                                 <time datetime={`years`}>{years}</time>
                             </header>
-                            <footer>
-                                <ul class="decoration-slate-700 flex flex-row gap-1 justify-center">
-                                    {
-                                        courses.map((course) =>
-                                            <li class="shadow-purple-400/85">{course}</li>)
-                                    }
-                                </ul>
+                            <footer class="flex-1">
+                                <div class="flex flex-col gap-1 justify-center">
+                                    <ul>
+                                        {
+                                            courses &&
+                                            courses.map((course) =>
+                                                <li class="flex flex-col gap-1">
+                                                    {course}
+                                                </li>
+                                            )
+                                        }
+                                    </ul>
+                                    <ul>
+                                        {
+                                            technologies &&
+                                            technologies.map((tech) => {
+                                                const techBadge = tech.replaceAll(" ", "%20")
+                                                const techBadgeURL = `https://img.shields.io/badge/${techBadge}-${techBadge}?style=for-the-badge&labelColor=white&color=gray`
+                                                
+                                                return (
+                                                    <li class="inline-flex mr-2">
+                                                        <img src={techBadgeURL} alt="..." />
+                                                        {/* A Astro le gusta cerrar la etiqueta con '/>'... */}
+                                                    </li>
+                                                )
+                                            })
+                                        }
+                                    </ul>
+                                </div>
                             </footer>
                         </article>
                     </li>
