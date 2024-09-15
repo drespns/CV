@@ -13,7 +13,7 @@ const { title } = Astro.props;
 		<meta name="author" content="Daniel Rguez Espinosa">
 		<meta name="description" content="My flabbergastingly outlandish CV!" />
 		<!-- <meta name="preview" content=""> -->
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width , initial-scale=1.0" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
@@ -48,6 +48,7 @@ const { title } = Astro.props;
 		box-sizing: border-box;
 	}
 	html {
+		width: 100%;
 		font-family:
 			Menlo,
 			Monaco,
