@@ -57,8 +57,8 @@
       "studyType": "Máster Oficial",
       "startDate": "2024-04-17",
       "endDate": "2025-03-25",
-      "score": "4.0",
-      "courses": [
+      "score": "0.0",
+      "coursesDeprecated": [
         "Fundamentos de la tecnología Big Data",
         "Procesamiento de Datos Masivos",
         "Estadística Avanzada",
@@ -67,22 +67,43 @@
         "Riesgos ...",
         "Cloud Computing"
       ],
-      "tfmgUrl": "#"
+      "technologies": [
+        "Docker",
+        "Tableau",
+        "MongoDB",
+        "Apache Hadoop / Cassandra / Spark",
+        "MapReduce",
+        "MAGERIT",
+        "...",
+        "AWS"
+      ],
+      "tfmgUrl": null
     },
     {
       "institution": "Valencian International University (VIU)",
       "url": "https://www.universidadviu.com/es/curso-programacion-python",
       "area": "Programación en Python",
-      "studyType": "Diploma",
+      "studyType": "Diploma - Curso Universitario",
       "startDate": "2023-04-16",
       "endDate": "2023-10-25",
-      "score": "4.0",
+      "score": "9.6",
       "courses": [
         "Introducción a la Programación",
         "Programación Avanzada",
         "Bases de Datos",
         "Machine Learning"
-      ]
+      ],
+      "technologies": [
+        "Python",
+        "Numpy / Pandas",
+        "PyQT",
+        "Selenium",
+        "Django",
+        "SQL / SQLite",
+        "SQLAlchemy - MongoDB",
+        "Tensorflow"
+      ],
+      "tfmgUrl": null
     },
     {
       "institution": "Universidad de La Laguna (ULL)",
@@ -91,15 +112,15 @@
       "studyType": "Grado",
       "startDate": "2016-09-13",
       "endDate": "2022-09-10",
-      "score": "4.0",
-      "courses": [
+      "score": "7.3",
+      "coursesDeprecated": [
         "Galois",
         "Introducción a la Programación",
         "Estadística",
         "Inferencia Estadística",
         "Análisis"
       ],
-      "tfmgUrl": "https://google.com"
+      "tfmgUrl": "https://riull.ull.es/xmlui/handle/915/30025"
     }
   ],
   "certificates": [
