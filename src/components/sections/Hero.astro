@@ -28,10 +28,11 @@ const printInfo = [email, phone, linkedInURL].filter(Boolean).join(" • ")
 ---
 
 <Section >
-    <div class="flex flex-col gap-3 group/hero md:flex-row md:justify-between items-center md:items-start">
-        <div class="container">
+    <div class="relative flex flex-col gap-3 group/hero md:flex-row md:justify-between items-center md:items-start">
+        <div class="absolute inset-0 bg-gradient-to-bl from-indigo-600/50 to-purple-500 size-full rotate-45 scale-125 rounded-full blur-[120px] translate-x-10 -z-10"></div>
+        <div class="relative container h-full z-20">
             <!-- bg-[url('data:image/svg+xml;utf8,%3Csvg viewBox=%220 0 1000 1000%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cdefs%3E%3CclipPath id=%22a%22%3E%3Cpath fill=%22currentColor%22 d=%22M778.5 671.5Q698 843 511 823.5T212.5 652Q101 500 220 361t300-174q181-35 260 139t-1.5 345.5Z%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3Cg clip-path=%22url(%23a)%22%3E%3Cpath fill=%22%23444cf7%22 d=%22M778.5 671.5Q698 843 511 823.5T212.5 652Q101 500 220 361t300-174q181-35 260 139t-1.5 345.5Z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E')] bg-repeat bg-cover bg-opacity-20 -->
-            <h1 class="relative text-3xl font-bold tracking-widest bg-clip-text text-transparent bg-gradient-to-r from-black/35 via-blue-950 to-blue-500 hover:">
+            <h1 class="relative text-3xl font-bold tracking-widest bg-clip-text text-transparent bg-gradient-to-r from-black/35 via-blue-950 to-blue-500 dark:text-white">
                 {name}
             </h1>
             <h2 class="relative">{label}</h2>
@@ -40,7 +41,7 @@ const printInfo = [email, phone, linkedInURL].filter(Boolean).join(" • ")
                 {city}, {region}
             </span>
 
-            <footer class="flex flex-row justify-center gap-10 mt-4 md:mt-6 md:justify-start">
+            <footer class="flex flex-row justify-center gap-10 mt-4 md:mt-6 md:justify-start flex-1">
                 
                 <!-- PRINT -->
                 <div class="print">

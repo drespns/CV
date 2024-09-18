@@ -65,6 +65,12 @@ const { title } = Astro.props;
 
 	img.avatar {
 		clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+
+		&:hover {
+			transform: scale(1.05);
+			/* pointer-events: ; */
+			cursor: pointer;
+		}
 	}
 	div.image {
 		clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
