@@ -1,12 +1,12 @@
 ---
 import Section from '../Section.astro'
 
-import SkillsComponent from '../SkillsComponent.astro'
+import SkillsComponent from '../SkillsSection.astro'
 
 // ICONS
 // Front-End
 import HTML from '../../assets/svg/HTML.astro'
-import CSS from '../../assets/svg/CSS.astro'
+import CSS3 from '../../assets/svg/CSS3.astro'
 import JavaScript from '../../assets/svg/JavaScript.astro'
 import TailwindCSS from '../../assets/svg/TailwindCSS.astro'
 import Astro4 from '../../assets/svg/Astro4.astro'
@@ -32,7 +32,7 @@ import { skillsFrontEnd, skillsBackEnd, skillsBigData } from '../../../cv.json'
 // const { name, level, keywords } = skills
 const SKILLS_FRONTEND_ICONS: Record<string, any> = {
     HTML,
-    CSS,
+    CSS3,
     JavaScript,
     TailwindCSS,
     Astro4,
@@ -66,7 +66,7 @@ const SKILLS_BIGDATA_ICONS: Record<string, any> = {
         {
             skillsFrontEnd.map(({ name, level, keywords, bgColor }) => {
                 const Icon = SKILLS_FRONTEND_ICONS[name]
-                name = name.replaceAll('4', '')
+                name = name.replaceAll('4', '').replaceAll('3', '')
 
                 const bgStyle = `background-color: rgb(${bgColor})`;
                 
