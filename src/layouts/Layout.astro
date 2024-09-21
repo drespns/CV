@@ -7,7 +7,7 @@ const { title } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="es">
+<html lang="es" class="overflow-x-hidden">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="author" content="Daniel Rguez Espinosa">
@@ -72,6 +72,16 @@ const { title } = Astro.props;
 			cursor: pointer;
 		}
 	}
+	img.blob {
+		/* clip-path: url("../assets/svg/media/blob.svg"); */
+		border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+		&:hover {
+			transform: scale(1.05);
+			/* pointer-events: ; */
+			cursor: pointer;
+		}
+	}
+	
 	div.image {
 		clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
 	}

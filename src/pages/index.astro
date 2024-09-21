@@ -15,43 +15,49 @@ import KeyboardManager from "../components/KeyboardManager.astro";
 //
 import Bubbles from "../components/Bubbles.astro";
 import Theme from "../components/Theme.astro";
+import SkillsSlider from "../components/SkillsSlider.astro";
+import Footer from "../components/sections/Footer.astro";
 ---
 
 <Layout title="Portfolio">
   <main
-    class="relative p-16 w-full mx-auto bg-gradient-to-br from-slate-50 via-slate-200 to-slate-50 dark:bg-slate-950/90 group/theme"
+    class="relative w-full mx-auto bg-gradient-to-br from-slate-50 via-slate-200 to-slate-50 dark:bg-slate-950/90 group/theme overflow-hidden bg-grid-light bg-grid-dark"
   >
+
     <Theme />
-    <Bubbles />
+    <!-- <Bubbles /> -->
 
     <!--  -->
-
     <Hero />
     <About />
 
     <Education />
     <Experience />
+    
     <Skills />
+    <SkillsSlider />
+
     <Projects />
+    <!-- <Languages /> -->
+    <Footer />
   </main>
 
-  <footer
+  <!-- <footer
     class="bottom-0 w-screen h-[250px] flex flex-row justify-center items-center bg-slate-900/90 border-t-2 border-teal-200"
   >
     <AstroBuild />
-  </footer>
+  </footer> -->
 
-  <KeyboardManager />
+  <!-- <KeyboardManager /> -->
 </Layout>
 
 <style>
   main {
-    background-image: linear-gradient(
-        to bottom,
-        rgba(26, 20, 20, 0.073) 1px,
-        transparent 1px
-      ),
+    background-image:
+      linear-gradient(to bottom, rgba(26, 20, 20, 0.073) 1px, transparent 1px),
       linear-gradient(to right, rgba(26, 20, 20, 0.073) 1px, transparent 1px);
     background-size: 16px 16px;
   }
+
+  @media ()
 </style>
