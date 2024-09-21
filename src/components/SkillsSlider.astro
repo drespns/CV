@@ -1,0 +1,159 @@
+---
+import Astro4 from "../assets/svg/Astro4.astro";
+import Blender from "../assets/svg/Blender.astro";
+import CSS3 from "../assets/svg/CSS3.astro";
+import Git from "../assets/svg/Git.astro";
+import HTML from "../assets/svg/HTML.astro";
+import JavaScript from "../assets/svg/JavaScript.astro";
+import AstroBuild from "../assets/svg/media/AstroBuild.astro";
+import MongoDB from "../assets/svg/MongoDB.astro";
+import MySQL from "../assets/svg/MySQL.astro";
+import Python from "../assets/svg/Python.astro";
+import R from "../assets/svg/R.astro";
+import Selenium from "../assets/svg/Selenium.astro";
+import TailwindCSS from "../assets/svg/TailwindCSS.astro";
+import ThreeJS from "../assets/svg/ThreeJS.astro";
+---
+
+<div class="overflow-hidden w-full bg-slate-900 dark:bg-slate-300">
+  <div
+    class="ticker__items flex flex-row gap-6 items-center w-full divide-x-8 divide-slate-300 dark:divide-slate-800"
+    data-animation="true"
+  >
+    <div class="ticker__item border-2 border-slate-300 p-4 m-2 rounded-full">
+      <Astro4 width="64px" />
+    </div>
+
+    <div class="ticker__item border-2 border-slate-300 p-4 m-2 rounded-full">
+      <HTML width="64px" />
+    </div>
+
+    <div class="ticker__item border-2 border-slate-300 p-4 m-2 rounded-full">
+      <CSS3 width="64px" />
+    </div>
+
+    <div class="ticker__item border-2 border-slate-300 p-4 m-2 rounded-full">
+      <JavaScript width="64px" />
+    </div>
+
+    <div class="ticker__item border-2 border-slate-300 p-4 m-2 rounded-full">
+      <Git width="64px" />
+    </div>
+
+    <div class="ticker__item border-2 border-slate-300 p-4 m-2 rounded-full">
+      <TailwindCSS width="64px" />
+    </div>
+
+    <div class="ticker__item border-2 border-slate-300 p-4 m-2 rounded-full">
+      <ThreeJS width="64px" />
+    </div>
+
+    <div class="ticker__item border-2 border-slate-300 p-4 m-2 rounded-full">
+      <MySQL width="64px" />
+    </div>
+
+    <div class="ticker__item border-2 border-slate-300 p-4 m-2 rounded-full">
+      <Python width="64px" />
+    </div>
+
+    <div class="ticker__item border-2 border-slate-300 p-4 m-2 rounded-full">
+      <Selenium width="64px" />
+    </div>
+
+    <div class="ticker__item border-2 border-slate-300 p-4 m-2 rounded-full">
+      <MongoDB width="64px" />
+    </div>
+
+    <div class="ticker__item border-2 border-slate-300 p-4 m-2 rounded-full">
+      <R width="64px" />
+    </div>
+
+    <div class="ticker__item border-2 border-slate-300 p-4 m-2 rounded-full">
+      <AstroBuild width="64px" />
+    </div>
+
+    <div class="ticker__item border-2 border-slate-300 p-4 m-2 rounded-full">
+      <AstroBuild width="64px" />
+    </div>
+
+    <div class="ticker__item border-2 border-slate-300 p-4 m-2 rounded-full">
+      <AstroBuild width="64px" />
+    </div>
+
+    <div class="ticker__item border-2 border-slate-300 p-4 m-2 rounded-full">
+      <AstroBuild width="64px" />
+    </div>
+
+    <div class="ticker__item border-2 border-slate-300 p-4 m-2 rounded-full">
+      <AstroBuild width="64px" />
+    </div>
+
+    <div class="ticker__item border-2 border-slate-300 p-4 m-2 rounded-full">
+      <AstroBuild width="64px" />
+    </div>
+
+    <div class="ticker__item border-2 border-slate-300 p-4 m-2 rounded-full">
+      <AstroBuild width="64px" />
+    </div>
+
+    <div class="ticker__item border-2 border-slate-300 p-4 m-2 rounded-full">
+      <AstroBuild width="64px" />
+    </div>
+
+  </div>
+</div>
+
+<style>
+  .ticker__items {
+    animation: slider linear 15s infinite alternate;
+  }
+
+  @keyframes slider {
+    /* from {
+      transform: translateX(0);
+    } */
+    to {
+      transform: translateX(-100%);
+      /* transform: translateX(calc(-100cqw - 100%)); */
+    }
+  }
+</style>
+
+<script>
+  const animatedElement: HTMLDivElement = document.querySelector(
+    '.ticker__items'
+  );
+  console.log(animatedElement);
+  const originalDuration = animatedElement.style.animationDuration;
+  console.log(`Original duration: ${originalDuration}`);
+
+  animatedElement.addEventListener("mouseenter", () => {
+    animatedElement.style.animationPlayState = "paused";
+    animatedElement.style.animationDuration = "35s";
+    console.log(animatedElement.style.animationDuration);
+  });
+
+  animatedElement.addEventListener("mouseleave", () => {
+    animatedElement.style.animationPlayState = "running";
+    // animatedElement.style.animationDuration = "15s";
+  });
+
+  let lastScrollTop = window.scrollY || document.documentElement.scrollTop;
+
+  const scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+  window.addEventListener("scroll", () => {
+    // event.target.dispatchEvent(new Event({ }))
+    if (scrollTop < lastScrollTop) {
+      animatedElement.style.animationDirection = "reverse";
+    } else {
+      animatedElement.style.animationDirection = "normal";
+    }
+
+    lastScrollTop = scrollTop; // <= 0 ? 0 : scrollTop;
+    // console.log(animatedElement.style.animationDuration);
+    // console.log(animatedElement.style.animationDirection);
+    console.log(scrollTop, lastScrollTop);
+  });
+
+</script>
